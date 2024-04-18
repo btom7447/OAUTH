@@ -1,0 +1,1314 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ROOT COLORS */
+:root {
+    --primary-background-one: #005046;
+    --primary-background-two: #056F62;
+    --secondary-background-one: #bb2f31e3;
+    --secondary-background-two: #F9C4D7;
+    --accent-two: #FCFEFE;
+    --primary-color: #000;
+    --secondary-color: #FFF;
+}
+
+/* MOBILE NAV (TOGGLED OFF) */
+nav .mobile-nav {
+    display: none;
+}
+nav .side-bar-mobile {
+    display: none;
+}
+/* NAVBAR (LANDING PAGE) */
+nav .top-navbar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+nav .top-navbar .hospital-logo-text {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+nav.top-navbar .hospital-logo-text img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+nav .top-navbar .hospital-logo-text h4 {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+nav .top-navbar .hospital-reachouts {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+nav .top-navbar .hospital-reachouts .emergency-contacts {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    cursor: default;
+}
+nav .hospital-reachouts .emergency-contacts h5 {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+nav .hospital-reachouts .emergency-contacts p {
+    color: var(--secondary-background-one);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+/* NAVBAR (LANDING PAGE) */
+nav .navbar {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary-background-one);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+nav .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+nav .navbar li a {
+    color: var(--secondary-color);
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+nav .navbars li a:hover {
+    color: var(--secondary-background-two);
+    font-weight: 600;
+}
+nav .navbars li a.active {
+    color: var(--secondary-background-two);
+    font-weight: 600;
+}
+nav .search-appointment {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .search-appointment .appointment-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 30px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    background-color: var(--secondary-background-two);
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: background-color 0.3s, color 0.3s;
+}
+nav .search-appointment .appointment-button:hover {
+    opacity: 0.9;
+}
+nav .search-container {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+}
+nav .search-container {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+}
+nav .search-mainbox {
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 160px;
+    background-color: var(--secondary-background-two);
+    transition: all 0.3s ease;
+}
+nav .search-checkbox:focus {
+    border: none;
+    outline: none;
+}
+nav .search-checkbox:checked {
+    right: 10px;
+}
+nav  .search-checkbox:checked ~ .search-mainbox {
+    width: 50px;
+} 
+nav .search-checkbox:checked ~ .search-mainbox .search_input {
+    width: 0;
+    height: 0px;
+}
+nav .search-checkbox:checked ~ .search-mainbox .search-iconContainer {
+    padding-right: 8px;
+} 
+nav .search-checkbox {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    z-index: 9;
+    cursor: pointer;
+    appearance: none;
+}
+nav .search_input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: var(--primary-background-one);
+    transition: all 0.3s ease;
+    font-family: "Work Sans";
+}
+nav .search_input::placeholder {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+} 
+nav .search-iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+nav .search_icon {
+    box-sizing: border-box;
+    fill: var(--primary-background-one);
+    font-size: 1.3em;
+}
+/* ACCOUNT DROPDOWN */
+nav .dropdown-content {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    margin: 230px 0 0 250px;
+    background-color: var(--secondary-color);
+    width: 200px;
+    z-index: 3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+nav .dropdown-content input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-background-two);
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    outline: none;
+}
+nav .dropdown-content input:placeholder-shown {
+    text-align: center;
+}
+nav .profile-account {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+nav .dropdown-content .signin-button {
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--secondary-background-two);
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+nav .dropdown-content .create-account-button {
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+}
+nav .show {
+    display: flex;
+}
+
+
+
+/* HERO SECTION */
+.home .hero-section {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    z-index: 1;
+}
+.home .hero-section .swiper-container {
+    width: 100%;
+    height: 95vh;
+    overflow: hidden;
+}
+.home .hero-section .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+.home .hero-section .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home .hero-section .hero-caption {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.home .hero-section .hero-caption h4 {
+    color: var(--secondary-background-one);
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.home .hero-section .hero-caption h1 {
+    color: var(--primary-background-one);
+    font-family: "Yeseva One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+.home .hero-caption .our-services {
+    margin-top: 30px;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 1;
+    background-color: var(--secondary-background-two);
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: background-color 0.3s, color 0.3s;
+}
+.home .hero-caption .our-services:hover {
+    opacity: 0.9;
+}
+.home .hero-section .hero-buttons-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center; 
+    z-index: 2;
+    position: absolute;
+    bottom: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+.home .hero-section .hero-buttons-container .hero-button {
+    width: 260px;
+    height: 100px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    opacity: 1;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    cursor: pointer;
+}
+.home .hero-section .hero-buttons-container .appointment {
+    background-color: var(--primary-background-one);
+    color: var(--secondary-color);
+}
+.home .hero-section .hero-buttons-container .doctor {
+    background-color: var(--secondary-background-two);
+    color: var(--primary-background-one);
+}
+.home .hero-section .hero-buttons-container .charges {
+    background-color: var(--secondary-background-one);
+    color: var(--secondary-color);
+}
+/* WELCOME SECTION */
+.home .welcome-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    background-color: var(--secondary-color);
+}
+.home .welcome-section h4 {
+    color: var(--secondary-background-one);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.home .welcome-section h2 {
+    color: var(--primary-background-one);
+    text-align: center;
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+.home .welcome-section p {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: justify; 
+    width: 50%;
+    padding: 0;
+    margin: 0;
+}
+.home .welcome-section .learn-more {
+    color: var(--secondary-background-one);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+.home .welcome-section .welcome-poster {
+    margin-top: 50px;
+    width: 80%;
+    height: 300px;
+    background-image: url(./images/welcome-poster.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* OUR SERVICES */
+.home .our-services {
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home .our-services h4 {
+    color: var(--secondary-background-one);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.home .our-services h2 {
+    color: var(--primary-background-one);
+    text-align: center;
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+.home .our-services .services-container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+.home .our-services .services-left {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #D9D9D9;
+}
+.home .our-services .service-button:first-of-type {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.home .our-services .service-button {
+    background-color: var(--secondary-color);
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.home .our-services .service-button.active {
+    background-color: var(--primary-background-one);
+    color: var(--secondary-background-two);
+}
+.home .our-services .service-button:hover {
+    background-color: var(--primary-background-one);
+    color: var(--secondary-background-two);
+}
+.home .our-services .service-button.active svg path,
+.home .our-services .service-button:hover svg path {
+    fill: var(--secondary-background-two);
+}
+.home .our-services .view-all {
+    background-color: var(--primary-background-one);
+    color: var(--secondary-background-two);
+    padding: 10px;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    border-top: solid 1px #D9D9D9;
+}
+.home .our-services .service-right-content {
+    display: none;
+}
+.home .our-services .service-right-content.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.home .our-services .service-middle-content.active {
+    display: flex
+}
+.home .our-services .service-middle-content {
+    height: 500px;
+    overflow-y: scroll;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 10px 20px;
+}
+.home .our-services .service-middle-content h3 {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.home .our-services .service-middle-content ul {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+.home .our-services .service-middle-content .service-list li {
+    width: 45%;
+    display: flex;
+    align-items: center; 
+    list-style-type: none;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--primary-color);
+    padding: 0;
+}
+.home .our-services .service-middle-content .service-list li::before {
+    content: "\2022";
+    font-size: 50px;
+    color: var(--secondary-background-one);
+    margin-right: 10px;
+}
+.home .our-services .service-middle-content p {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    text-align: justify;
+}
+/* OUR SPECIALITIES SECTION */
+.home .our-specialities {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.home .our-specialities h4 {
+    color: var(--secondary-background-one);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.home .our-specialities h2 {
+    color: var(--primary-background-one);
+    text-align: center;
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+.home .our-specialities .specialities-container {
+    margin-top: 50px;
+    width: 80%;
+    height: fit-content;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+.home .our-specialities .speciality {
+    height: 180px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #D9D9D9;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: background-color 0.3s, color 0.3s;
+}
+.home .our-specialities .speciality:hover {
+    background-color: var(--primary-background-one);
+    color: var(--secondary-background-two);
+}
+.home .our-specialities .speciality:hover svg path {
+    fill: var(--secondary-background-two);
+}
+/* BOOK AN APPOINTMENT */
+.home .book-appointment {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto; 
+    background: url('images/book-appointment-poster.png') no-repeat center center fixed;
+    background-size: cover;
+    background-position-x: right;
+    background-attachment: fixed;
+}
+.home .book-appointment::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.home .book-appointment .appointment-container {
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+.home .appointment-container .appointment-caption {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.home .appointment-container .appointment-caption h2 {
+    color: var(--secondary-background-one);
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.home .appointment-container .appointment-caption p {
+    color: var(--Black, #212124);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.home .appointment-container .booking-form {
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+.home .appointment-container .booking-form option {
+    padding: 20px;
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.booking-form input[type="text"]:nth-child(1) {
+    border-top-left-radius: 5px;
+}
+.booking-form select:nth-child(2) {
+    border-top-right-radius: 5px;
+}
+.home .appointment-container .booking-form input {
+    width: 50%;
+    height: 60px;
+    padding: 10px;
+    outline: solid 1px var(--secondary-background-one);
+    border: solid 1px var(--secondary-background-one);
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.home .appointment-container .booking-form input::placeholder {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+
+.home .appointment-container .booking-form .departments-input {
+    width: 100%;
+}
+.home .appointment-container .booking-form textarea {
+    padding: 10px;
+    width: 100%;
+    height: 150px;
+    border: solid 1px var(--secondary-background-one);
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.home .appointment-container .booking-form textarea::placeholder {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.home .appointment-container .booking-form select {
+    width: 50%;
+    height: 60px;
+    padding: 10px;
+    border: solid 1px var(--secondary-background-one);
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    padding-right: 30px !important; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none;
+    outline: var(--secondary-background-one);
+    /* Add a custom arrow */
+    background-image: url('./images/select-dropdown.svg');
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: right center; 
+    background-position-x: 97%;
+}
+
+/* Style the option dropdown */
+.home .appointment-container .booking-form select option {
+    /* Add your option styles here */
+}
+
+/* Optional: Style the select element's container for additional margin */
+.home .appointment-container .booking-form select-container {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.home .appointment-container .booking-form .booking-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--secondary-background-one);
+    color: var(--secondary-color);
+    cursor: pointer;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; 
+    text-transform: uppercase;
+}
+/* TRUSTED SPECIALIST SECTION */
+.home .our-doctors {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 100px;
+    background-color: var(--secondary-color);
+}
+.home .our-doctors h4 {
+    color: var(--secondary-background-one);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.home .our-doctors h2 {
+    color: var(--primary-background-one);
+    text-align: center;
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+.home .our-doctors .doctors-carousel-container {
+    margin-top: 50px;
+    width: 80%;
+    height: fit-content;
+    background-color: var(--secondary-color);
+}
+.home .our-doctors .swiper-container {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    overflow-x: auto;
+}
+.home .our-doctors .swiper-slide {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .our-doctors .swiper-pagination {
+    position: relative;
+    bottom: -20px;
+}
+.home .our-doctors .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 5px; 
+    background-color: var(--secondary-background-two);
+}
+.home .our-doctors .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--primary-background-one);
+}
+.home .our-doctors .doctors-profile {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+}
+.home .our-doctors .doctors-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.home .our-doctors .doctors-profile .doctor-caption {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--secondary-background-two);
+}
+.home .our-doctors .doctors-profile .doctor-caption p {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.home .our-doctors .doctors-profile .doctor-caption h5 {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase; 
+}
+.home .our-doctors .doctors-profile .doctor-socials {
+    width: 120px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.home .our-doctors .doctors-profile .view-profile {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border: none;
+    background-color: var(--primary-background-one);
+    color: var(--secondary-background-two);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.home .our-doctors .doctors-profile .view-profile:hover {
+    opacity: 0.9;
+}
+/* GET IN TOUCH SECTION */
+.home .contact-section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.home .contact-section h4 {
+    color: var(--secondary-background-one);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.home .contact-section h2 {
+    color: var(--primary-background-one);
+    text-align: center;
+    font-family: "Yeseva One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+.home .contact-section .contact-container {
+    margin-top: 50px;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch; 
+    padding: 20px;
+}
+.home .contact-container .contact-box {
+    border-radius: 5px;
+    padding: 20px;
+    flex-basis: 23%;
+    background-color: var(--secondary-background-two);
+    color: var(--primary-background-one);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.home .contact-container .contact-box:hover {
+    color: var(--secondary-background-two);
+    background-color: var(--primary-background-one);
+}
+.home .contact-section .contact-box:hover svg path {
+    stroke: var(--secondary-background-two);
+}
+.home .contact-container .contact-box h5 {
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.home .contact-container .contact-box p {
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-background-one);
+}
+footer h5 {
+    color: var(--secondary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+footer p, 
+footer li {
+    color: var(--secondary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+footer ul {
+    width: fit-content;
+    height: fit-content;
+}
+footer li {
+    list-style-type: none;
+    padding: 5px;
+    width: 100%;
+}
+footer .footer-top {
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+/* TOP ONE */
+footer .footer-top .top-one {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer .footer-top .top-one img {
+    margin-bottom: -80px;
+}
+footer .footer-top .top-one p {
+    align-self: flex-start;
+    margin-top: -10px;
+}
+footer .top-four {
+    width: fit-content;
+}
+footer .top-four .newsletter-container {
+    width: 270px;
+    height: 50px;
+    padding-right: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: var(--secondary-background-two);
+}
+footer .top-four .newsletter-container input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--primary-background-one);
+}
+footer .top-four .newsletter-container input::placeholder {
+    color: var(--primary-background-one);
+}
+footer .top-four .newsletter-container button {
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 10px;
+}
+footer hr {
+    width: 80%;
+    height: 1px;
+    background-color: var(--secondary-background-two);
+    border: none;
+    margin: 20px auto;
+}
+footer .footer-bottom {
+    width: 80%;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-bottom .footer-socials {
+    width: fit-content;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+
+* {
+    /* outline: red solid 1px; */
+}
+
