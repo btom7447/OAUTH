@@ -398,20 +398,20 @@
     }
 
     /* GET IN TOUCH SECTION */
-    .home .contact-section {
+    .contact-section {
         margin-top: 30px;
         margin-bottom: 30px;
     }
-    .home .contact-section h4 {
+    .contact-section h4 {
         font-size: 14px;
     }
-    .home .contact-section h2 {
+    .contact-section h2 {
         font-size: 24px;
     }
-    .home .contact-section .contact-container {
+    .contact-section .contact-container {
         margin-top: 30px;
         width: 90%;
-        gap: 10px;
+        gap: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Define two columns with equal width */
         justify-content: center;
@@ -419,7 +419,7 @@
         padding: 10px;
     }
     
-    .home .contact-container .contact-box {
+    .contact-section .contact-container .contact-box {
         height: 250px;
     }
     
@@ -472,6 +472,51 @@
         align-items: center;
     }
 
+    /* SERVICES */
+    .service {
+        margin-bottom: 30px;
+    }
+    .service .top-caption {
+        height: 10rem;
+        padding: 10px;
+    }
+    .service .top-caption .top-links {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-40%, -30%);
+    }
+    .service .top-caption .top-links a, 
+    .service .top-caption .top-links span {
+        font-size: 16px;
+    }
+    .service .top-caption .top-links h2 {
+        font-size: 30px;
+    }
+
+    /* LIST OF SERVICES */
+    .service .services-list {
+        margin-top: 30px;
+        width: 80%;
+        gap: 30px;
+    }
+    .service .service-item .service-card {
+        height: fit-content;
+    }
+    .service .service-item .service-caption h5 {
+        font-size: 18px;
+        margin: 10px auto;
+    }
+    .service .service-item .service-caption p {
+        font-size: 14px;
+    }
+    .service .service-item .service-card {
+        height: 18rem;
+    }
+    .service .service-item .service-icon {
+        top: 60%;
+        transform: translateY(-60%); 
+    }
 
     * {
         /* outline: red solid 1px; */

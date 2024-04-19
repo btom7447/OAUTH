@@ -330,8 +330,6 @@ nav .show {
     display: flex;
 }
 
-
-
 /* HERO SECTION */
 .home .hero-section {
     width: 100%;
@@ -1091,7 +1089,7 @@ nav .show {
     opacity: 0.9;
 }
 /* GET IN TOUCH SECTION */
-.home .contact-section {
+.contact-section {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -1101,7 +1099,7 @@ nav .show {
     margin-top: 50px;
     margin-bottom: 100px;
 }
-.home .contact-section h4 {
+.contact-section h4 {
     color: var(--secondary-background-one);
     text-align: center;
     font-family: "Work Sans";
@@ -1114,7 +1112,7 @@ nav .show {
     margin: 0;
     padding: 0;
 }
-.home .contact-section h2 {
+.contact-section h2 {
     color: var(--primary-background-one);
     text-align: center;
     font-family: "Yeseva One";
@@ -1125,7 +1123,7 @@ nav .show {
     padding: 0;
     margin: 0;
 }
-.home .contact-section .contact-container {
+.contact-section .contact-container {
     margin-top: 50px;
     width: 80%;
     height: fit-content;
@@ -1136,7 +1134,7 @@ nav .show {
     align-items: stretch; 
     padding: 20px;
 }
-.home .contact-container .contact-box {
+.contact-container .contact-box {
     border-radius: 5px;
     padding: 20px;
     flex-basis: 23%;
@@ -1148,14 +1146,14 @@ nav .show {
     justify-content: flex-start;
     align-items: flex-start;
 }
-.home .contact-container .contact-box:hover {
+.contact-container .contact-box:hover {
     color: var(--secondary-background-two);
     background-color: var(--primary-background-one);
 }
-.home .contact-section .contact-box:hover svg path {
+.contact-section .contact-box:hover svg path {
     stroke: var(--secondary-background-two);
 }
-.home .contact-container .contact-box h5 {
+.contact-container .contact-box h5 {
     font-family: "Work Sans";
     font-size: 18px;
     font-style: normal;
@@ -1165,7 +1163,7 @@ nav .show {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-.home .contact-container .contact-box p {
+.contact-container .contact-box p {
     font-family: "Work Sans";
     font-size: 16px;
     font-style: normal;
@@ -1305,6 +1303,209 @@ footer .footer-bottom .footer-socials {
     flex-wrap: nowrap;
     align-items: center;
 }
+
+/* SERVICES */
+.service {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.service .top-caption {
+    width: 100%;
+    height: 20rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background-image: url(./images/caption-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.service .top-caption .top-links {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -20%);
+}
+.service .top-caption .top-links a, 
+.service .top-caption .top-links span {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.service .top-caption .top-links h2 {
+    color: var(--primary-background-one);
+    font-family: "Yeseva One";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.service .top-caption .caption-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+.service .top-caption .caption-border .accent {
+    background-color: var(--secondary-background-two);
+    width: 20%;
+    height: 100%;
+}
+.service .top-caption .caption-border .green {
+    background-color: var(--primary-background-one);
+    width: 60%;
+    height: 100%;
+}
+.service .top-caption .caption-border .red {
+    background-color: var(--secondary-background-one);
+    width: 20%;
+    height: 100%;
+}
+
+/* LIST OF SERVICES */
+.service .services-list {
+    margin-top: 80px;
+    width: 80%;
+    height: fit-content;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 20px;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */
+}
+.service .services-list .service-item {
+    border: solid 1px var(--primary-background-two);
+    border-radius: 5px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+}
+.service .service-item .service-card {
+    width: 100%;
+    height: 300px;
+}
+.service .service-item .service-caption {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: var(--secondary-color);
+}
+.service .service-item .service-caption h5 {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 10px auto;
+}
+.service .service-item .service-caption p {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.service .service-item .service-caption .learn-more {
+    background-color: transparent;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--secondary-background-one);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    cursor: pointer;
+}
+.service .service-item .service-card {
+    position: relative; 
+    width: 100%;
+    height: 300px;
+    overflow: hidden; 
+}
+.service .service-item .service-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+}
+.service .service-item .service-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.service .service-item .service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+    z-index: 2; 
+}
+.service .service-item:hover .service-card::before {
+    background-color: var(--primary-background-two);
+    opacity: 0.7;
+}
+.service .service-item:hover .service-overlay {
+    opacity: 1;
+}
+.service .service-item:hover .service-icon {
+    opacity: 0;
+}
+.service .service-item .service-icon {
+    position: absolute;
+    top: 60%;
+    right: 10px;
+    transform: translateY(-60%); 
+    background-color: var(--primary-background-one);
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 5;
+    transition: opacity 0.3s ease;
+}
+
 
 
 
