@@ -347,7 +347,7 @@ function includeFooter() {
                     <ul>
                         <li><a href="#appointment">Appointment</a></li>
                         <li><a href="">Doctors</a></li>
-                        <li><a href="">Services</a></li>
+                        <li><a href="services.html">Services</a></li>
                         <li><a href="">About Us</a></li>
                     </ul>
                 </div>
