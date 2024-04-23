@@ -471,17 +471,17 @@
         height: 12rem;
         padding: 10px;
     }
-    .service .top-caption .top-links {
+    .top-caption .top-links {
         position: absolute;
         top: 40%;
         left: 30%;
         transform: translate(-40%, -30%);
     }
-    .service .top-caption .top-links a, 
-    .service .top-caption .top-links span {
+    .top-caption .top-links a, 
+    .top-caption .top-links span {
         font-size: 16px;
     }
-    .service .top-caption .top-links h2 {
+    .top-caption .top-links h2 {
         font-size: 30px;
     }
 
@@ -510,7 +510,22 @@
     }
 
 
+    /* SERVICE DETAILS */
+    .service-detail {
+        margin-bottom: 30px;
+    }
+    .service-detail .top-caption {
+        height: 12rem;
+        padding: 10px;
+    }
+
+    /* DOCTORS */
+    .doctor .top-caption {
+        height: 10rem;
+        padding: 10px;
+    }
+
    * {
-       outline: red solid 1px;
+       /* outline: red solid 1px; */
    }
 }

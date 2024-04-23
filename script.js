@@ -203,7 +203,7 @@ function includeHeader() {
                 </div>
             </div>
             <div class="mobile-header">
-                <img src="./images/oauthc mobile logo.png" alt="">
+                <img src="./images/oauthc mobile logo.png" alt="OAUTHC Logo" onclick="redirectToPage('index.html')"  style="cursor: pointer;">
                 <h5>
                     Obafemi Awolowo University <br> 
                     Teaching Hospitals Complex
@@ -234,7 +234,7 @@ function includeHeader() {
         <section class="top-navbar">
             <!-- HOSPITAL LOGO -->
             <div class="hospital-logo-text">
-                <img src="./images/oauthc-logo.png" alt="Hospital Logo">
+                <img src="./images/oauthc-logo.png" alt="Hospital Logo" onclick="redirectToPage('index.html')"  style="cursor: pointer;">
                 <h4>
                     Obafemi Awolowo University <br> 
                     Teaching Hospitals Complex
@@ -338,7 +338,7 @@ function includeFooter() {
                     <img src="./images/oauthc-logo.png" alt="OAUTHC logo">
                     <h5>
                         OBAFEMI AWOLOWO UNIVERSITY <br>
-                        TEACHING HOSPTIALS COMPLEX
+                        TEACHING HOSPITALS COMPLEX
                     </h5>
                     <p>All for Health</p>
                 </div>
@@ -346,7 +346,7 @@ function includeFooter() {
                     <h5>Important Links</h5>
                     <ul>
                         <li><a href="#appointment">Appointment</a></li>
-                        <li><a href="">Doctors</a></li>
+                        <li><a href="doctors.html">Doctors</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="">About Us</a></li>
                     </ul>
@@ -358,8 +358,8 @@ function includeFooter() {
                         <li>Email: info@oauthc.gov.ng</li>
                         <li>
                             Address: Obafemi Awolowo University <br>
-                            Teaching Hosipital Complex Ilesha Road, <br>
-                            Ife, Osun, Nigeria
+                            Teaching Hosipitals Complex, Ilesha Road, <br>
+                            Ife, Osun State, Nigeria.
                         </li>
                     </ul>
                 </div>
@@ -409,3 +409,48 @@ function redirectToPage(url) {
     window.location.href = url; 
 }
 
+// SERVICE DETAILS DOCTOR CAROUSEL
+// DOCTOR CAROUSEL
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('#service-detail-carousel', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 5000, // milliseconds
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 1,
+            },
+            715: {
+                slidesPerView: 2,
+            },
+            1000: {
+                slidesPerView: 3,
+            },
+        },
+    });
+});
+
+// DOCTOR REVIEW CAROUSEL
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('#reviewCarousel', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 5000, // milliseconds
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+});

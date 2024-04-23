@@ -694,6 +694,7 @@ nav .show {
     line-height: 140%; 
     text-align: justify;
 }
+
 /* OUR SPECIALITIES SECTION */
 .home .our-specialities {
     width: 100%;
@@ -948,7 +949,7 @@ nav .show {
     text-transform: uppercase;
 }
 /* TRUSTED SPECIALIST SECTION */
-.home .our-doctors {
+.our-doctors {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -959,7 +960,7 @@ nav .show {
     margin-top: 100px;
     background-color: var(--secondary-color);
 }
-.home .our-doctors h4 {
+.our-doctors h4 {
     color: var(--secondary-background-one);
     text-align: center;
     font-family: "Work Sans";
@@ -972,7 +973,7 @@ nav .show {
     margin: 0;
     padding: 0;
 }
-.home .our-doctors h2 {
+.our-doctors h2 {
     color: var(--primary-background-one);
     text-align: center;
     font-family: "Yeseva One";
@@ -983,40 +984,40 @@ nav .show {
     padding: 0;
     margin: 0;
 }
-.home .our-doctors .doctors-carousel-container {
+.our-doctors .doctors-carousel-container {
     margin-top: 50px;
     width: 80%;
     height: fit-content;
     background-color: var(--secondary-color);
 }
-.home .our-doctors .swiper-container {
+.our-doctors .swiper-container {
     width: 100%;
     height: fit-content;
     padding: 20px 0;
     overflow-x: auto;
 }
-.home .our-doctors .swiper-slide {
+.our-doctors .swiper-slide {
     width: fit-content;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home .our-doctors .swiper-pagination {
+.our-doctors .swiper-pagination {
     position: relative;
     bottom: -20px;
 }
-.home .our-doctors .swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
     border-radius: 50%;
     margin: 0 5px; 
     background-color: var(--secondary-background-two);
 }
-.home .our-doctors .swiper-pagination .swiper-pagination-bullet-active {
+.our-doctors .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--primary-background-one);
 }
-.home .our-doctors .doctors-profile {
+.doctors-profile {
     width: 300px;
     height: fit-content;
     display: flex;
@@ -1025,12 +1026,12 @@ nav .show {
     align-items: center;
     border-radius: 5px;
 }
-.home .our-doctors .doctors-profile img {
+.doctors-profile img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.home .our-doctors .doctors-profile .doctor-caption {
+.doctor-caption {
     width: 100%;
     height: fit-content;
     padding: 20px 5px;
@@ -1041,7 +1042,7 @@ nav .show {
     gap: 10px;
     background-color: var(--secondary-background-two);
 }
-.home .our-doctors .doctors-profile .doctor-caption p {
+.doctors-profile .doctor-caption p {
     color: var(--primary-background-one);
     font-family: "Work Sans";
     font-size: 18px;
@@ -1049,7 +1050,7 @@ nav .show {
     font-weight: 400;
     line-height: 140%; 
 }
-.home .our-doctors .doctors-profile .doctor-caption h5 {
+.doctors-profile .doctor-caption h5 {
     color: var(--primary-background-one);
     font-family: "Work Sans";
     font-size: 18px;
@@ -1058,8 +1059,9 @@ nav .show {
     line-height: normal;
     letter-spacing: 2.88px;
     text-transform: uppercase; 
+    text-align: center;
 }
-.home .our-doctors .doctors-profile .doctor-socials {
+.doctors-profile .doctor-socials {
     width: 120px;
     height: fit-content;
     display: flex;
@@ -1068,7 +1070,7 @@ nav .show {
     justify-content: space-between;
     align-items: center;
 }
-.home .our-doctors .doctors-profile .view-profile {
+.doctors-profile .view-profile {
     width: 100%;
     height: fit-content;
     padding: 10px;
@@ -1085,9 +1087,10 @@ nav .show {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
-.home .our-doctors .doctors-profile .view-profile:hover {
+.doctors-profile .view-profile:hover {
     opacity: 0.9;
 }
+
 /* GET IN TOUCH SECTION */
 .contact-section {
     width: 100%;
@@ -1213,7 +1216,7 @@ footer li {
 }
 footer .footer-top {
     margin: auto;
-    width: 80%;
+    width: 90%;
     height: fit-content;
     display: flex;
     gap: 20px;
@@ -1280,14 +1283,14 @@ footer .top-four .newsletter-container button {
     margin-top: 10px;
 }
 footer hr {
-    width: 80%;
+    width: 90%;
     height: 1px;
     background-color: var(--secondary-background-two);
     border: none;
     margin: 20px auto;
 }
 footer .footer-bottom {
-    width: 80%;
+    width: 90%;
     display: flex;
     gap: 20px;
     flex-direction: row;
@@ -1312,7 +1315,7 @@ footer .footer-bottom .footer-socials {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .service .top-caption {
     width: 100%;
@@ -1328,14 +1331,14 @@ footer .footer-bottom .footer-socials {
     background-size: cover;
     background-position: top left;
 }
-.service .top-caption .top-links {
+.top-caption .top-links {
     position: absolute;
     top: 50%;
     left: 20%;
     transform: translate(-50%, -20%);
 }
-.service .top-caption .top-links a, 
-.service .top-caption .top-links span {
+.top-caption .top-links a, 
+.top-caption .top-links span {
     color: var(--primary-background-one);
     font-family: "Work Sans";
     font-size: 18px;
@@ -1343,7 +1346,7 @@ footer .footer-bottom .footer-socials {
     font-weight: 400;
     line-height: 140%;
 }
-.service .top-caption .top-links h2 {
+.top-caption .top-links h2 {
     color: var(--primary-background-one);
     font-family: "Yeseva One";
     font-size: 48px;
@@ -1351,7 +1354,7 @@ footer .footer-bottom .footer-socials {
     font-weight: 400;
     line-height: normal;
 }
-.service .top-caption .caption-border {
+.top-caption .caption-border {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -1364,25 +1367,43 @@ footer .footer-bottom .footer-socials {
     align-items: center;
     gap: 0;
 }
-.service .top-caption .caption-border .accent {
+.top-caption .caption-border .accent {
     background-color: var(--secondary-background-two);
     width: 20%;
     height: 100%;
 }
-.service .top-caption .caption-border .green {
+.top-caption .caption-border .green {
     background-color: var(--primary-background-one);
     width: 60%;
     height: 100%;
 }
-.service .top-caption .caption-border .red {
+.top-caption .caption-border .red {
     background-color: var(--secondary-background-one);
     width: 20%;
     height: 100%;
 }
 
+/* SERVICE CAPTION */
+.service .service-caption {
+    margin: 50px auto ;
+    width: 80%;
+    height: fit-content;
+}
+.service .service-caption strong {
+    font-weight: 700;
+}
+.service .service-caption p {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
 /* LIST OF SERVICES */
 .service .services-list {
-    margin-top: 80px;
+    margin-top: 30px;
     width: 80%;
     height: fit-content;
     align-self: center;
@@ -1443,6 +1464,12 @@ footer .footer-bottom .footer-socials {
     font-weight: 400;
     line-height: 140%;
     cursor: pointer;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
 .service .service-item .service-card {
     position: relative; 
@@ -1507,9 +1534,286 @@ footer .footer-bottom .footer-socials {
 }
 
 
+/* SERVICES DETAILS */
+.service-detail {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.service-detail .top-caption {
+    width: 100%;
+    height: 20rem;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background-image: url(./images/caption-image\(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
 
+/* SERVICE DETAILS CONTAINER */
+.service-detail .services-container {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+.service-detail .services-left {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #D9D9D9;
+}
+.service-detail .service-button:first-of-type {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.service-detail .service-button:last-of-type {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.service-detail .service-button {
+    background-color: var(--secondary-color);
+    width: 210px;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.service-detail .service-button.active {
+    background-color: var(--primary-background-one);
+    color: var(--secondary-background-two);
+}
+.service-detail .service-button:hover {
+    background-color: var(--primary-background-one);
+    color: var(--secondary-background-two);
+}
+.service-detail .service-button.active svg path,
+.service-detail .service-button:hover svg path {
+    fill: var(--secondary-background-two);
+}
+.service-detail .service-middle-content.active {
+    display: flex
+}
+.service-detail .service-middle-content {
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+.service-detail .service-middle-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.service-detail .service-middle-content h3 {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.service-detail .service-middle-content ul {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+.service-detail .service-middle-content .service-list li {
+    width: 25%;
+    display: flex;
+    align-items: center; 
+    list-style-type: none;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--primary-color);
+    padding: 0;
+}
+.service-detail .service-middle-content .service-list li::before {
+    content: "\2022";
+    font-size: 50px;
+    color: var(--secondary-background-one);
+    margin-right: 10px;
+}
+.service-detail .service-middle-content p {
+    color: var(--primary-color);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+    text-align: justify;
+}
+.service-detail .our-doctors .doctors-profile .doctor-caption {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--secondary-background-two);
+}
+.service-detail .our-doctors .doctors-profile .doctor-caption p {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; 
+}
+.service-detail .our-doctors .doctors-profile .doctor-caption h5 {
+    color: var(--primary-background-one);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 2.88px;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+/* DOCTORS */
+.doctors {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+.doctors .top-caption {
+    width: 100%;
+    height: 20rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    background-image: url(./images/caption-image\(2\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+}
+.doctors .doctors-container {
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    display: grid;
+    grid-row-start: auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(3, auto);
+    gap: 50px 30px;
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  */
+}
+.doctors .doctors-container .doc-grid-items {
+    width: fit-content;
+    height: fit-content;
+}
+.doctors .doctors-container .view-more {
+    display: none;
+}   
+.doctors .doctors-reviews {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    overflow-y: auto; 
+    background: url('images/review-picture.png') no-repeat center center fixed;
+    background-size: cover;
+    background-position-x: left;
+    background-attachment: fixed;
+}
+.doctors .doctors-reviews::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-background-two);
+    opacity: 0.7;
+}
+.doctors .doctors-reviews .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.doctors .doctors-reviews .review-card {
+    width: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.doctors .review-card h5 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.doctors .review-card hr {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.doctors .review-card h6 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
 
 * {
-    /* outline: red solid 1px; */
+    /* outline: red solid 1px;  */
 }
 
