@@ -454,3 +454,25 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 });
+
+// DOCTORS PAGE GRID VIEW MORE LOGIC
+document.addEventListener("DOMContentLoaded", function() {
+    const viewMoreButton = document.querySelector(".view-more");
+    const docGridItems = document.querySelectorAll(".doc-grid-items");
+
+    // Function to toggle visibility of additional grid items
+    function toggleAdditionalGridItems() {
+        docGridItems.forEach(function(item, index) {
+            if (index >= 3) {
+                item.style.display = "flex";
+            }
+        });
+        viewMoreButton.style.display = "none";
+    }
+
+    // Event listener for the "View More" button
+    viewMoreButton.addEventListener("click", function() {
+        toggleAdditionalGridItems();
+    });
+});
+ 

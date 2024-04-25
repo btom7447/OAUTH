@@ -532,7 +532,44 @@
         height: 10rem;
         padding: 10px;
     }
-
+    .doctors .doctors-container {
+        width: 90%;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    }
+    .doctors-container .doc-grid-items {
+        margin: auto;
+    }
+    .doctors-container .doc-grid-items:nth-child(n+4) {
+        display: none;
+        margin: auto;
+    }
+    .doctors .doctors-container > .view-more {
+        display: block;
+        width: 100%;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--primary-background-one);
+        color: var(--secondary-background-two);
+        font-family: "Work Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; 
+    }   
+    .doctors .doctors-reviews {
+        height: 50vh;
+        background: url('images/review-picture.png') no-repeat top left fixed;
+        background-size: cover;
+        background-position-y: top;
+        background-position-x: left;
+    }
+    .doctors .doctors-reviews .review-card {
+        width: 80%;
+        top: 30%;
+        transform: translate(-50%, -20%);
+    }
     * {
         /* outline: red solid 1px; */
     }

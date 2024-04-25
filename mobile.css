@@ -608,9 +608,11 @@
         gap: 10px;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     }
+    .doctors-container .doc-grid-items:nth-child(n+4) {
+        display: none;
+    }
     .doctors .doctors-container > .view-more {
         display: block;
-        /* margin: auto; */
         width: 100%;
         padding: 10px 20px;
         border: none;
